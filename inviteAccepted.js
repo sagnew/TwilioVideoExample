@@ -1,12 +1,6 @@
 function conversationStarted(conversation) {
-    var dialog = conversation._dialogs.values().next().value;
-    var peerConnection = dialog.session.mediaHandler.peerConnection;
-
-    console.log(peerConnection);
-
-        // Mute the local media's audio.
-    var localMedia = conversation.localMedia;
-    localMedia.mute();
+  // Here is where you add your own custom functionality.
+  console.log('The conversation has started.');
 }
 
 function onInviteAccepted(conversation) {
